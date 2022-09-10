@@ -1,1 +1,82 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  color: #ffffff;
+  background-color: green;
+}
+
+.mt-5 {
+  margin-top: 2rem;
+}
+
+.color--red {
+  color: red;
+}
+
+.color--black {
+  color: black;
+}
+
+/* .header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.card {
+  background-color: white;
+  height: 80px;
+  width: 60px;
+  margin-right: 1rem;
+  border-radius: 8%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.suit {
+  padding-left: 10%;
+}
+
+.suit--bottom {
+  transform: rotate(180deg);
+}
+
+.number {
+  margin: 20% 0%;
+  text-align: center;
+  color: black;
+}
+
+.cards-container-row {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cards-container-sort-row {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sort-container {
+  margin-top: 2rem;
+}
+
+.container-iteration-num {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.iteration-num {
+  font-size: 1.4rem;
+}

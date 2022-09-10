@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <title>Sorting Cards With Bubble Sort</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="header-container mt-5">
+      <div class="header__content">
+        <label for="amount_of_cards">Original:</label>
+        <input type="text" id="amount_of_cards" />
+        <button class="btn--draw">Draw</button>
+        <button class="btn--sort">Sort</button>
+        <div class="cards-container">
+          <!-- Generate n of cards by input.value -->
+          <!-- <div class="card">
+                    <span class="suit suit--top">${card.suit}</span>
+                    <span class="number">${card.num}</span>
+                    <span class="suit suit--bottom color--red">${card.suit}</span>
+                </div> -->
+        </div>
+        <div class="sort-container mt-5">
+          <p class="log__header">Select sort log:</p>
+          <div class="cards-sorted-container">
+            <!-- Carts sorted -->
+          </div>
+        </div>
       </div>
     </div>
+
+    <!--JS Scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
