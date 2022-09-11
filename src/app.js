@@ -1,7 +1,9 @@
+import "./style.css";
+
 let cardsArr = [];
-const input = document.querySelector("#amount_of_cards");
-const btnDraw = document.querySelector(".btn--draw");
-const btnSort = document.querySelector(".btn--sort");
+const input = document.querySelector("#Cards");
+const btnDraw = document.querySelector(".Draw");
+const btnSort = document.querySelector(".Sort");
 const numsCards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
 const suitsCards = ["♦", "♥", "♠", "♣"];
 
@@ -12,6 +14,19 @@ class Card {
     this.num = num;
   }
 }
+
+// Event listeners
+
+btnDraw.addEventListener("click", () => {
+  let numCards = input.value;
+  cardsArr = generateCardsArray(numCards);
+  addCards(cardsArr, false, 0);
+});
+
+btnSort.addEventListener("click", () => {
+  clearSortedContainer();
+  bubbleSort(cardsArr);
+});
 
 // Functions
 
@@ -98,16 +113,3 @@ const bubbleSort = cardsArr => {
 
   return newCardsArr;
 };
-
-// Event listeners
-
-btnDraw.addEventListener("click", () => {
-  let numCards = input.value;
-  cardsArr = generateCardsArray(numCards);
-  addCards(cardsArr, false, 0);
-});
-
-btnSort.addEventListener("click", () => {
-  clearSortedContainer();
-  bubbleSort(cardsArr);
-});

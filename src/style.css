@@ -1,20 +1,11 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
+/* html {
   box-sizing: inherit;
-}
+} */
 
 body {
-  color: #ffffff;
-  background-color: green;
-}
-
-.mt-5 {
-  margin-top: 2rem;
+  color: black;
+  text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff;
+  background-color: rgb(14, 182, 14);
 }
 
 .color--red {
@@ -25,19 +16,12 @@ body {
   color: black;
 }
 
-/* .header-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
 .card {
   background-color: white;
-  height: 80px;
-  width: 60px;
+  height: 100px;
+  width: 70px;
   margin-right: 1rem;
-  border-radius: 8%;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -79,4 +63,11 @@ body {
 
 .iteration-num {
   font-size: 1.4rem;
+}
+
+.footer {
+  margin: 0 auto;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
 }
